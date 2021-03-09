@@ -47,7 +47,7 @@ Consumption_source$Year = ymd(Consumption_source$Year)
 
 #Separate by source and totals
 Consumption_by_source = Consumption_source[ , -c(5,12,13)]
-Total_Consumption = Consumption_source[ , -c(5,12)]
+Total_Consumption = Consumption_source
 
 #Transform total consumption to percentages
 percentage = function(x) 100/ Total_Consumption$`Total Primary Energy Consumption` * x
